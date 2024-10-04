@@ -286,7 +286,7 @@
 }
 
 .deal-icon {
-  width: 40px; /* Placeholder size for icons */
+  width: 40px; 
   height: 40px;
   margin-bottom: 0.5rem;
 }
@@ -358,7 +358,7 @@
   max-width: 600px;
   margin: 0 auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for polish */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   margin-top: 1rem;
 }
 
@@ -366,7 +366,7 @@
   font-size: 1.3rem;
   color: #333;
   margin-bottom: 1rem;
-  font-weight: 600; /* Slightly bolder for emphasis */
+  font-weight: 600; 
 }
 
 .service-checklist {
@@ -380,8 +380,8 @@
 .service-checklist li {
   display: flex;
   align-items: center;
-  margin-bottom: 0.6rem; /* Slightly increased spacing */
-  padding-left: 0.5rem; /* Adds space for icon */
+  margin-bottom: 0.6rem; 
+  padding-left: 0.5rem; 
 }
 
 .service-checklist li::before {
@@ -407,7 +407,7 @@
 }
 
 .start-button:hover {
-  background-color: #57A35B; /* Slightly darker green on hover */
+  background-color: #57A35B;
 }
 
 /* Mobile (up to 600px) */
