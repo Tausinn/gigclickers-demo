@@ -1,30 +1,19 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import JobSection from './components/JobSection'
-import DealMarket from './components/DealMarket'
-import ExchangeService from './components/ExchangeService'
-import Employers from './components/Employers'
-import Workers from './components/Workers'
-import ShareEarn from './components/ShareEarn'
-import FAQ from './components/FAQ'
-import Form from './components/Form'
-import Footer from './components/Footer'
+import React, { useEffect } from 'react'
+import { RouterProvider } from 'react-router-dom'
+import router from './routes/router'
+
+import Aos from "aos"
+import "aos/dist/aos.css";
 
 const App = () => {
+
+  useEffect(function () {
+    Aos.init({ duration: 500 });
+  }, []);
+
   return (
-    <div>
-     <Navbar/>
-     <HeroSection/>
-     <JobSection/>
-     <DealMarket/>
-     <ExchangeService/>
-     <Employers/>
-     <Workers/>
-     <ShareEarn/>
-     <FAQ/>
-     <Form/>
-     <Footer/>
+    <div >
+      <RouterProvider router={router}></RouterProvider>
      
      
     </div>

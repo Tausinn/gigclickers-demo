@@ -1,0 +1,17 @@
+<!-- <IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "https://www.mehrmahmud.com" "always"
+  Header set Access-Control-Allow-Methods "GET, POST, OPTIONS" "always"
+  Header set Access-Control-Allow-Headers "X-Requested-With, Content-Type, Authorization" "always"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /subdirectory
+  RewriteCond %{REQUEST_METHOD} OPTIONS
+  RewriteRule ^(.*)$ $1 [R=200,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule> -->

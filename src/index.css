@@ -1,93 +1,7 @@
-/* styles/Navbar.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: #E8F5E9;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2E7D32;
-}
-
-.nav-buttons {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.login-button,
-.signup-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.login-button {
-  background-color: #F1F8E9;
-  color: #2E7D32;
-  transition: 0.5s ease;
-}
-
-.login-button:hover{
-  background-color: #3d9941;
-  color: white;
-}
-.signup-button {
-  background-color: #66BB6A;
-  color: white;
-  transition: 0.5s ease;
-}
-
-.signup-button:hover{
-  background-color:#488d4b; ;
-}
-
-/* Mobile (up to 600px) */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    padding: 0.5rem;
-  }
-
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  .nav-buttons {
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 0.5rem;
-  }
-
-  .login-button,
-  .signup-button {
-    font-size: 0.9rem;
-    padding: 0.4rem 1rem;
-  }
-}
-
-/* Tablet (601px - 768px) */
-@media (min-width: 601px) and (max-width: 768px) {
-  .navbar {
-    padding: 0.8rem;
-  }
-
-  .logo {
-    font-size: 1.4rem;
-  }
-
-  .login-button,
-  .signup-button {
-    font-size: 0.95rem;
-    padding: 0.5rem 1.2rem;
-  }
-}
 
 
 /* styles/HeroSection.css */
@@ -95,7 +9,7 @@
 .hero {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #E8F5E9;
+
 }
 
 .hero h1 {
@@ -269,7 +183,7 @@
 
 .deal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
   gap: 1rem;
 }
 
@@ -299,7 +213,7 @@
 
 .deal-count {
   font-size: 0.9rem;
-  color: #4CAF50;
+  color: #20AC57;
 }
 
 /* Mobile (up to 600px) */
@@ -585,7 +499,7 @@
 }
 
 .review-card {
-  background-color: #f1f3f4;
+ 
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -596,24 +510,15 @@
   
 }
 
-.icon-placeholder {
-  width: 50px;
-  height: 50px;
-  background-color: #4CAF50;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
 .review-card h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #333;
   margin-bottom: 0.8rem;
   font-weight: bold;
 }
 
 .review-card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #555;
   line-height: 1.4;
 }
@@ -659,7 +564,7 @@
   padding: 1.5rem;
   background-color: #ffffff;
   margin: 0 auto;
-  text-align: center;
+  text-align: start;
   display: flex;
   flex-direction: column;
   max-width: 900px;
@@ -677,13 +582,13 @@
   background-color: #f9f9f9;
   border: 1px solid #2E7D32;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 24px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: start;
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   transition: 0.5s ease;
 }
 
@@ -717,7 +622,7 @@
   font-size: 0.95rem;
   color: #555;
   line-height: 1.4;
-  text-align: center;
+  text-align: start;
 }
 
 /* Mobile (up to 600px) */
@@ -755,7 +660,7 @@
 .share-earn-section {
   padding: 1.5rem;
   background-color: #ffffff;
-  text-align: center;
+  text-align: start;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -1087,4 +992,4 @@ h2 {
   .footer-logo {
     margin-bottom: 0;
   }
-}}
+}

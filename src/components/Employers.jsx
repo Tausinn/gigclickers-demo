@@ -1,4 +1,5 @@
 import React from 'react'
+import { RiGlobalFill } from 'react-icons/ri';
 
 const Employers = () => {
 
@@ -21,15 +22,22 @@ const Employers = () => {
       ];
       
   return (
+    <div>
+      <h2 className='text-center lg:text-5xl text-3xl font-bold my-10'>Employee</h2>
     <section className="job-review-section">
     {jobReviews.map((review, index) => (
-      <div key={index} className="review-card">
-        <div className="icon-placeholder"></div>
-        <h4>{review.title}</h4>
-        <p>{review.description}</p>
+
+      
+      <div key={index} className="review-card group mb-6  bg-[#f1f3f4] hover:bg-green-600 ">
+        <div className="flex justify-center items-center bg-green-600 p-2 shadow-md rounded-full -mt-16 w-20 h-20 group-hover:bg-[#f1f3f4] ">
+        <RiGlobalFill className='text-5xl text-[#f1f3f4] group-hover:text-green-600' />
+        </div>
+        <h4 className='group-hover:text-[#f1f3f4]'>{review.title}</h4>
+        <p className='max-w-[90%] group-hover:text-gray-100 text-center mx-auto'>{review.description}</p>
       </div>
     ))}
   </section>
+  </div>
   )
 }
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import { FcBarChart } from "react-icons/fc";
 
 const DealMarket = () => {
 
@@ -25,18 +25,25 @@ const DealMarket = () => {
         { title: 'Email Marketing', count: '21 Deals' }
       ];
   return (
+    <div className='px-4 lg:px-16 py-10'>
+       <div className='flex justify-start items-center gap-6'>
+      <div className='h-12 w-12 rounded-lg bg-[#20AC57]'></div>
+  <h2 className='text-2xl mt-3 text-slate-800 font-semibold'>Find Jobs</h2>
+  </div>
     <section className="deal-marketplace">
-    <h2>Deal Marketplace</h2>
-    <div className="deal-grid">
+  
+    <div className="grid lg:grid-cols-4 grid-cols-2 gap-3">
       {deals.map((deal, index) => (
         <div key={index} className="deal-card">
-          <div className="deal-icon"></div>
+         
+        <FcBarChart className="text-2xl"></FcBarChart>
           <h3 className="deal-title">{deal.title}</h3>
-          <p className="deal-count">{deal.count}</p>
+          <p className="deal-count font-bold">{deal.count}</p>
         </div>
       ))}
     </div>
   </section>
+  </div>
   )
 }
 

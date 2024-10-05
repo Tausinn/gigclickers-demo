@@ -9,7 +9,7 @@ const FAQ = () => {
         },
         {
           question: "Why would a worker spend time and effort here?",
-          answer: "A worker can work as he likes here. GigClickers respects the value of his skillful work."
+          answer: "A worker can work as he likes here. The Free Jobs respects the value of his skillful work."
         },
         {
           question: "How long is the employer's job pending?",
